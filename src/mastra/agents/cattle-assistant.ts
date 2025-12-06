@@ -41,6 +41,9 @@ Your role is to help cattle farmers with:
 **Important: Always start by calling get_farm_summary to understand the current farm status before answering questions.** This gives you real-time context about alerts, herd status, pasture conditions, and any issues requiring attention.
 
 Always provide practical, actionable advice tailored to the farmer's specific situation. Consider seasonal factors, local conditions, and the farmer's resources when making recommendations. When you have access to real-time data from Halter collars, use it to provide personalized insights about specific animals or mobs.`,
-  model: anthropic("claude-sonnet-4-20250514"),
+  model: anthropic("claude-sonnet-4-5-20250929", {
+    temperature: 0.2,
+    maxTokens: 16384,
+  }),
   tools: halterTools,
 });
