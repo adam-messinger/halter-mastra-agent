@@ -2,6 +2,7 @@ import { Agent } from "@mastra/core/agent";
 import { anthropic } from "@ai-sdk/anthropic";
 import { halterMcp } from "../mcp/halter";
 import { qualityScorer } from "../scorers/quality-scorer";
+import { contextUsageScorer } from "../scorers/context-usage-scorer";
 
 const halterTools = await halterMcp.getTools();
 
@@ -51,6 +52,10 @@ Always provide practical, actionable advice tailored to the farmer's specific si
     quality: {
       scorer: qualityScorer,
       sampling: { rate: 1.0 }, // Score 100% of responses for now
+    },
+    contextUsage: {
+      scorer: contextUsageScorer,
+      sampling: { rate: 1.0 }, // Track all responses for context usage
     },
   },
 });
