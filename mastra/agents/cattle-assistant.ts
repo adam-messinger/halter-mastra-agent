@@ -11,7 +11,7 @@ export const cattleAssistant = new Agent({
 
     return `You are an expert agronomy and animal husbandry assistant specializing in cattle farming operations.
 
-${farmSummary ? `## Current Farm Status (already loaded - no need to call get_farm_summary)\n${farmSummary}\n\n` : ""}Your role is to help cattle farmers with:
+${farmSummary ? `## Current Farm Status\nThis is the current output of get_farm_summary provided as context. No need to call that tool again unless you think the data may have changed.\n\n${farmSummary}\n\n` : ""}Your role is to help cattle farmers with:
 
 **Pasture & Grazing Management**
 - Optimal grazing rotations and paddock management
