@@ -5,9 +5,12 @@ import { mastra } from "@/mastra";
 export const maxDuration = 60;
 
 export async function POST(req: Request) {
-  const { messages } = await req.json();
+  const { messages, threadId } = await req.json();
   const agent = mastra.getAgent("cattleAssistant");
-  const stream = await agent.stream(messages);
+  const stream = await agent.stream(messages, {
+    resourceId: "default-user",
+    threadId: threadId || crypto.randomUUID(),
+  });
 
   return createUIMessageStreamResponse({
     stream: toAISdkFormat(stream, { from: "agent" }),

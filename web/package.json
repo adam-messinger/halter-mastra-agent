@@ -25,6 +25,8 @@
     "@mastra/ai-sdk": "^0.3.2",
     "@mastra/core": "^0.24.6",
     "@mastra/mcp": "^0.14.4",
+    "@mastra/memory": "^0.15.12",
+    "@mastra/pg": "^0.17.9",
     "@radix-ui/react-avatar": "^1.1.11",
     "@radix-ui/react-collapsible": "^1.1.12",
     "@radix-ui/react-dialog": "^1.1.15",
