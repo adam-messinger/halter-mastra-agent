@@ -42,16 +42,16 @@ export const Assistant = () => {
                 <BreadcrumbList>
                   <BreadcrumbItem className="hidden md:block">
                     <BreadcrumbLink
-                      href="https://www.assistant-ui.com/docs/getting-started"
+                      href="https://www.halterhq.com"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Build Your Own ChatGPT UX
+                      Halter
                     </BreadcrumbLink>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator className="hidden md:block" />
                   <BreadcrumbItem>
-                    <BreadcrumbPage>Starter Template</BreadcrumbPage>
+                    <BreadcrumbPage>Farm Assistant</BreadcrumbPage>
                   </BreadcrumbItem>
                 </BreadcrumbList>
               </Breadcrumb>

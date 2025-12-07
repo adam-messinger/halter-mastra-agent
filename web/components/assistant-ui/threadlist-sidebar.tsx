@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Github, MessagesSquare } from "lucide-react";
+import { Leaf, MessagesSquare } from "lucide-react";
 import Link from "next/link";
 import {
   Sidebar,
@@ -24,16 +24,19 @@ export function ThreadListSidebar({
             <SidebarMenuItem>
               <SidebarMenuButton size="lg" asChild>
                 <Link
-                  href="https://assistant-ui.com"
+                  href="https://www.halterhq.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <div className="aui-sidebar-header-icon-wrapper flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-                    <MessagesSquare className="aui-sidebar-header-icon size-4" />
+                    <Leaf className="aui-sidebar-header-icon size-4" />
                   </div>
                   <div className="aui-sidebar-header-heading mr-6 flex flex-col gap-0.5 leading-none">
                     <span className="aui-sidebar-header-title font-semibold">
-                      assistant-ui
+                      Halter
+                    </span>
+                    <span className="text-xs text-muted-foreground">
+                      Farm Assistant
                     </span>
                   </div>
                 </Link>
@@ -51,17 +54,17 @@ export function ThreadListSidebar({
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
               <Link
-                href="https://github.com/assistant-ui/assistant-ui"
+                href="https://www.halterhq.com/book-a-call-with-halter"
                 target="_blank"
               >
                 <div className="aui-sidebar-footer-icon-wrapper flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-                  <Github className="aui-sidebar-footer-icon size-4" />
+                  <MessagesSquare className="aui-sidebar-footer-icon size-4" />
                 </div>
                 <div className="aui-sidebar-footer-heading flex flex-col gap-0.5 leading-none">
                   <span className="aui-sidebar-footer-title font-semibold">
-                    GitHub
+                    Contact Halter
                   </span>
-                  <span>View Source</span>
+                  <span>Book a call</span>
                 </div>
               </Link>
             </SidebarMenuButton>
