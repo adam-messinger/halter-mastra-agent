@@ -96,7 +96,7 @@ const ThreadWelcome: FC = () => {
             exit={{ opacity: 0, y: 10 }}
             className="aui-thread-welcome-message-motion-1 text-2xl font-semibold"
           >
-            Hello there!
+            Kia ora!
           </m.div>
           <m.div
             initial={{ opacity: 0, y: 10 }}
@@ -105,7 +105,7 @@ const ThreadWelcome: FC = () => {
             transition={{ delay: 0.1 }}
             className="aui-thread-welcome-message-motion-2 text-2xl text-muted-foreground/65"
           >
-            How can I help you today?
+            How can I help with the farm today?
           </m.div>
         </div>
       </div>
@@ -119,24 +119,24 @@ const ThreadSuggestions: FC = () => {
     <div className="aui-thread-welcome-suggestions grid w-full gap-2 pb-4 @md:grid-cols-2">
       {[
         {
-          title: "What's the weather",
-          label: "in San Francisco?",
-          action: "What's the weather in San Francisco?",
+          title: "Farm overview",
+          label: "What's happening today?",
+          action: "Give me a farm overview. What's happening on the farm today?",
         },
         {
-          title: "Explain React hooks",
-          label: "like useState and useEffect",
-          action: "Explain React hooks like useState and useEffect",
+          title: "Health alerts",
+          label: "Which cows need attention?",
+          action: "Are there any health alerts? Which cows need attention?",
         },
         {
-          title: "Write a SQL query",
-          label: "to find top customers",
-          action: "Write a SQL query to find top customers",
+          title: "Mating progress",
+          label: "Submission rates and heats",
+          action: "How's mating going? What are our submission rates and who's on heat?",
         },
         {
-          title: "Create a meal plan",
-          label: "for healthy weight loss",
-          action: "Create a meal plan for healthy weight loss",
+          title: "Pasture status",
+          label: "Paddock covers and rotation",
+          action: "What's our pasture status? Show me paddock covers and the grazing rotation.",
         },
       ].map((suggestedAction, index) => (
         <m.div
