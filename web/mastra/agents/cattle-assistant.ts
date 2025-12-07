@@ -1,9 +1,6 @@
 import { Agent } from "@mastra/core/agent";
 import { anthropic } from "@ai-sdk/anthropic";
-import { Memory } from "@mastra/memory";
 import { halterMcp } from "../mcp/halter";
-import { qualityScorer } from "../scorers/quality-scorer";
-import { contextUsageScorer } from "../scorers/context-usage-scorer";
 
 const halterTools = await halterMcp.getTools();
 
@@ -46,30 +43,4 @@ Your role is to help cattle farmers with:
 Always provide practical, actionable advice tailored to the farmer's specific situation. Consider seasonal factors, local conditions, and the farmer's resources when making recommendations. When you have access to real-time data from Halter collars, use it to provide personalized insights about specific animals or mobs.`,
   model: anthropic("claude-sonnet-4-5-20250929"),
   tools: halterTools,
-  scorers: {
-    quality: {
-      scorer: qualityScorer,
-      sampling: { type: "ratio" as const, rate: 1.0 },
-    },
-    contextUsage: {
-      scorer: contextUsageScorer,
-      sampling: { type: "ratio" as const, rate: 1.0 },
-    },
-  },
-  ...(process.env.POSTGRES_URL && {
-    memory: new Memory({
-      options: {
-        lastMessages: 20,
-        semanticRecall: false,
-        workingMemory: {
-          enabled: true,
-          template: `# Farm Context
-- Farm Name:
-- Herd Size:
-- Primary Concerns:
-- Recent Issues:`,
-        },
-      },
-    }),
-  }),
 });
