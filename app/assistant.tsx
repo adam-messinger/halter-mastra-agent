@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import { AssistantRuntimeProvider } from "@assistant-ui/react";
 import {
   useChatRuntime,
@@ -9,13 +8,6 @@ import {
 import { Thread } from "@/components/assistant-ui/thread";
 
 export const Assistant = () => {
-  // Prefetch farm summary on page load
-  useEffect(() => {
-    fetch("/api/farm-summary", { method: "POST" }).catch(() => {
-      // Ignore prefetch errors
-    });
-  }, []);
-
   const runtime = useChatRuntime({
     transport: new AssistantChatTransport({
       api: "/api/chat",
