@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --check .",
-    "prettier:fix": "prettier --write ."
+    "prettier:fix": "prettier --write .",
+    "test:smoke": "npx tsx tests/smoke.ts",
+    "test:smoke:local": "TEST_URL=http://localhost:3000 npm run test:smoke"
   },
   "prettier": {
     "plugins": [
