@@ -16,12 +16,23 @@ export async function POST(req: Request) {
   if (messages.length === 1) {
     try {
       const tools = await halterMcp.getTools();
-      const summary = await tools.get_farm_summary.execute({});
-      runtimeContext.set("farmSummary", JSON.stringify(summary, null, 2));
+      console.log("Available tools:", Object.keys(tools));
+      const result = await tools.halter_get_farm_summary.execute({ context: { include: [] } });
+      console.log("Farm summary result:", result);
+      if (result && !result.isError) {
+        // Extract text content from MCP response
+        const content = result.content?.[0];
+        if (content?.type === "text" && content.text) {
+          runtimeContext.set("farmSummary", content.text);
+        }
+      } else {
+        console.error("Farm summary returned error:", result);
+      }
     } catch (error) {
       console.error("Failed to fetch farm summary:", error);
     }
   }
+  console.log("RuntimeContext farmSummary:", runtimeContext.get("farmSummary") ? "SET" : "NOT SET");
 
   const stream = await agent.stream(messages, { runtimeContext });
 
