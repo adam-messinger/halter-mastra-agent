@@ -11,7 +11,7 @@ export const cattleAssistant = new Agent({
 
     return `You are an expert agronomy and animal husbandry assistant specializing in cattle farming operations.
 
-${farmSummary ? `## Current Farm Status\nThis is the output of \`halter_get_farm_summary({ include: [] })\` - only the default overview and alerts sections. Call it again with specific include values (e.g., \`{ include: ["herd", "pasture", "health"] }\`) if you need detailed operational data for those sections.\n\n${farmSummary}\n\n` : ""}Your role is to help cattle farmers with:
+${farmSummary ? `## Current Farm Status (Pre-loaded)\nThe farm summary below was automatically fetched - DO NOT call halter_get_farm_summary again unless the user explicitly asks for refreshed/updated data. This overview and alerts data is sufficient for most questions.\n\n${farmSummary}\n\n` : ""}Your role is to help cattle farmers with:
 
 **Pasture & Grazing Management**
 - Optimal grazing rotations and paddock management

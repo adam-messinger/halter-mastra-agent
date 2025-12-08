@@ -26,8 +26,8 @@ export async function POST(req: Request) {
           runtimeContext.set("farmSummary", content.text);
         }
       }
-    } catch (error) {
-      console.error("Failed to fetch farm summary:", error);
+    } catch {
+      // Farm summary fetch failed - agent will work without pre-loaded context
     }
   }
 
