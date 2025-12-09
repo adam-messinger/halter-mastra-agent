@@ -1,7 +1,7 @@
 import { Agent } from "@mastra/core/agent";
 import { anthropic } from "@ai-sdk/anthropic";
 import { getCachedTools } from "../mcp/halter";
-import { answerRelevancyScorer } from "../scorers";
+import { promptAlignmentScorer } from "../scorers";
 
 const halterTools = await getCachedTools();
 
@@ -47,8 +47,8 @@ Always provide practical, actionable advice tailored to the farmer's specific si
   model: anthropic("claude-sonnet-4-5-20250929"),
   tools: halterTools,
   scorers: {
-    answerRelevancy: {
-      scorer: answerRelevancyScorer,
+    promptAlignment: {
+      scorer: promptAlignmentScorer,
       sampling: { type: "none" }, // Score every response
     },
   },

@@ -1,0 +1,1329 @@
+{
+  "timestamp": "2025-12-09T17:50:21.140Z",
+  "baseUrl": "http://localhost:3001",
+  "totalQuestions": 132,
+  "passed": 0,
+  "failed": 132,
+  "results": [
+    {
+      "section": "Overview",
+      "question": "How many cows do I have? How does that compare to last year?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 18,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Overview",
+      "question": "What mobs do I have?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Overview",
+      "question": "How many mobs?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Overview",
+      "question": "What are my biggest mobs?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Overview",
+      "question": "What is my stocking rate? Is that high or low?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Overview",
+      "question": "What's the average age of my cows? Is that too old/young?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Overview",
+      "question": "Is my herd good?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Overview",
+      "question": "What are my pet cows?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Overview",
+      "question": "What cows do I like the most?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Overview",
+      "question": "Which cows should I cull?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Overview",
+      "question": "Which cows should I dry off early?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Health",
+      "question": "How many sick cows do I have?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Health",
+      "question": "Do I have any sick cows at the moment?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Health",
+      "question": "What 5 cows have been sick the most?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Health",
+      "question": "What cows are sick the most often? What cows are often sick and also old or low breeding worth?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Health",
+      "question": "How many cows have I lost this season? Is that good or bad?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Health",
+      "question": "What are my best cows?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Mating",
+      "question": "Is my mating season going well?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Mating",
+      "question": "How does it compare to last year, or how does it compare to my neighbors, or how does it compare to my neighbours vs how last year compared to my neighbours?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Mating",
+      "question": "How does it compare to industry averages (for system and farm type). What are my opportunities within mating?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Mating",
+      "question": "What cows/trends are good/bad?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Mating",
+      "question": "What's my cycling rate at the moment, how does it compare, is it good or bad?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Mating",
+      "question": "What's my non return rate at the moment, how does it compare, is it good or bad?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Mating",
+      "question": "What's my estimated in-calf rate at the moment, how does it compare, is it good or bad?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Mating",
+      "question": "Are my cows cycling well after calving?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Mating",
+      "question": "How many cows have I excluded from the season? Which cows?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Mating",
+      "question": "Have I intervened with many cows?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Mating",
+      "question": "How many of my cows did not cycle before the planned start of mating?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Mating",
+      "question": "What groups of cows are over performing or under performing for reproduction performance?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Mating",
+      "question": "What are the common ways to improve mating performance?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 2,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Mating",
+      "question": "Does the timing of AI and heat matter? Whens best?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Mating",
+      "question": "Did I miss any cows 'on heat' this morning?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Farm System",
+      "question": "What is the primary goal of my dairy system: profit per hectare, profit per cow, or lifestyle and workload balance?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Farm System",
+      "question": "Should my farm run as all-grass, grass plus supplements, or a higher-input system given my soils and climate?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Farm System",
+      "question": "What stocking rate can my farm realistically carry in an average season without buying excessive feed?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Farm System",
+      "question": "How does my optimal stocking rate change in a wet year, a dry year, or under irrigation?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Farm System",
+      "question": "Am I better off running more moderate cows at higher stocking rate, or fewer high-producing cows with more inputs?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Farm System",
+      "question": "What is my realistic target for milksolids per hectare and per cow in this district?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Farm System",
+      "question": "Is my current calving pattern (spring/autumn/split) still the best fit for my milk contract and pasture growth curve?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Farm System",
+      "question": "How dependent is my system on purchased feed, and am I comfortable with that exposure to price and supply shocks?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Farm System",
+      "question": "What are the biggest constraints on production on this farm: pasture growth, cow condition, labour, shed capacity, or cash?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Farm System",
+      "question": "If I changed nothing else, which single constraint would unlock the most extra profit or resilience?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Genetics and Breeding",
+      "question": "What is the ideal cow type for this farm: Friesian, Jersey, crossbred, or another mix, given my pasture and payout structure?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Genetics and Breeding",
+      "question": "Are my cows too big and high-maintenance for a largely grass-based system, or too small to take advantage of my feed supply?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Genetics and Breeding",
+      "question": "How much emphasis should I put on fertility vs production vs longevity in breeding decisions?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Genetics and Breeding",
+      "question": "Am I using BW, PW, and reliability figures effectively when selecting bulls and replacements?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Genetics and Breeding",
+      "question": "How much inbreeding risk do I have in the herd, and how am I managing it?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Genetics and Breeding",
+      "question": "Should I be using more sexed semen, beef semen, or both to improve herd genetics and calf value?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Genetics and Breeding",
+      "question": "Are my top cows truly my top profit cows, or just my highest-volume producers?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Genetics and Breeding",
+      "question": "What physical faults (feet, udders, temperament) are costing me most in lost milk and culling?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Genetics and Breeding",
+      "question": "Am I better to breed for slightly less peak production but better fertility and robustness under pasture-only feeding?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Genetics and Breeding",
+      "question": "How should I balance using AI sires vs natural bulls to hit my breeding and workload goals?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "What does my pasture growth curve actually look like month by month, not just what I assume?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "How accurate is my pasture measurement (plate meter, eyeballing, software) and do I use that data for decisions?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "What is my true average pasture utilisation: how much grown vs how much eaten or wasted?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "Am I carrying too much pasture into spring or too little into summer and autumn?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "Do I have clear target pre-graze and post-graze covers for each time of the season?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "How often do my actual residuals match those targets, and what stops me when they do not?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "Is my regrassing programme fast enough to keep the proportion of young, productive pasture high?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "Are my pasture species (ryegrass, clover, herbs) still the best fit for my soils and climate trends?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "Would alternative forages (fodder beet, lucerne, kale, plantain mixes) improve my feed supply or just add complexity?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "How often am I short of pasture for more than a week or two, and what patterns cause that shortage?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "Is my rotation length set by plant needs, cow needs, or habit?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "How quickly do I adjust rotation length in response to changes in growth rate and forecast?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "Am I using on-off grazing, back-fencing, or other tools to protect pasture in wet conditions?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "Where are my worst-performing paddocks, and do I know exactly why they underperform (drainage, fertility, species, aspect)?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "Is soil fertility (pH, P, K, S, trace elements) limiting pasture growth, and do I have recent soil tests?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "How efficiently am I using nitrogen: timing, rate, and placement versus leaching and waste?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "Could better pasture management reduce my reliance on bought-in feed by a meaningful amount?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "Do I know the real cost per tonne of DM of my home-grown pasture versus purchased feeds?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "Are my laneways, water troughs, and paddock layouts helping or hindering even pasture utilisation?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Pasture Management",
+      "question": "Am I leaving enough residual leaf area to maintain pasture quality and persistence over years?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Reproduction",
+      "question": "What is my current 6-week in-calf rate, and what is realistically achievable on this farm?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Reproduction",
+      "question": "How many days after calving are cows typically cycling and ready to mate?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Reproduction",
+      "question": "Are my cows going to mating with an adequate body condition score to conceive early?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Reproduction",
+      "question": "Is my mating period too long, causing a drawn-out calving and extra labour, or too short for my current management?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Reproduction",
+      "question": "How effectively am I detecting heats: visual observation, tail paint, activity monitors, or a mix?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Reproduction",
+      "question": "Do I have a clear plan for anoestrous cows before and during mating (metrics, interventions, vet input)?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Reproduction",
+      "question": "What proportion of herd is mated in the first 3 weeks, and how does that affect my calving profile and production?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Reproduction",
+      "question": "Should I use synchrony programmes in heifers or cows to tighten mating and calving, and does the economics stack up?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Reproduction",
+      "question": "What is my empty rate and what are the key drivers: nutrition, genetics, disease, or mating management?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Reproduction",
+      "question": "How am I using mating and culling decisions to steadily improve herd fertility over several seasons?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Calving",
+      "question": "Is my planned start of calving aligned with when I will have enough cheap feed for freshly calved cows?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Calving",
+      "question": "Are cows at target condition score at drying off and at calving, and how often do I check this objectively?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Calving",
+      "question": "How well am I managing the transition period from dry cow to early lactation to minimise metabolic disease?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Calving",
+      "question": "Do I have clear protocols for down cows, milk fever, ketosis, and other peripartum issues?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Calving",
+      "question": "Is my calving area set up to minimise stress, mud, and disease pressure for cows and calves?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Calving",
+      "question": "How often do cows need calving assistance, and what can I change to reduce this?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Calving",
+      "question": "Do I intervene too early or too late in difficult calvings, based on vet guidance?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Calving",
+      "question": "How am I ensuring newborn calves get adequate, good-quality colostrum quickly after birth?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Calving",
+      "question": "What is my actual calf mortality from birth to weaning, and what are the main causes?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 2,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Calving",
+      "question": "Could changing calving date, cow genetics, or body condition materially reduce calving problems?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Replacements and Youngstock",
+      "question": "How many replacements do I actually need given my cull rate and expansion or contraction plans?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Replacements and Youngstock",
+      "question": "Am I rearing too many or too few heifers relative to the herd I want in 3–5 years?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Replacements and Youngstock",
+      "question": "What are my criteria for selecting heifer calves: genetics, dam performance, birth date, health?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Replacements and Youngstock",
+      "question": "Is my colostrum management for replacement calves good enough to protect future herd health and longevity?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Replacements and Youngstock",
+      "question": "Are rearing facilities (pens, hutches, sheds) giving calves a clean, dry, well-ventilated environment?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Replacements and Youngstock",
+      "question": "What growth targets do I have for calves and yearlings, and do I measure if they are being hit?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Replacements and Youngstock",
+      "question": "Are my youngstock grazing and parasite programmes setting them up to calve at the right size and age?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Replacements and Youngstock",
+      "question": "Should I contract graze heifers or rear them on-farm, and which option gives better long-term results?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 2,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Replacements and Youngstock",
+      "question": "Are my heifers entering the herd in good condition and calving early, or always playing catch-up?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Replacements and Youngstock",
+      "question": "How do I cull or reclassify poor-performing young cows quickly enough to avoid dragging the herd down?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Herd Health",
+      "question": "What are the main health issues in my herd: lameness, mastitis, metabolic disease, reproduction, parasites, or others?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Herd Health",
+      "question": "Is my herd health plan genuinely preventative or mostly reactive to problems as they arise?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Herd Health",
+      "question": "Do I have an agreed annual animal health plan with my vet that includes targets and review points?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Herd Health",
+      "question": "How serious is lameness on my farm, and what are the underlying causes: tracks, time on concrete, nutrition, or genetics?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Herd Health",
+      "question": "How effective is my mastitis control: SCC trends, clinical case rate, cure rates, and culling for udder health?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Herd Health",
+      "question": "Am I using dry-cow therapy and teat sealants in a targeted and responsible way?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Herd Health",
+      "question": "Are my parasite control strategies for cows and youngstock based on risk and testing, or just routine treatments?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Herd Health",
+      "question": "How are my handling facilities and milking routine affecting cow stress and injury rates?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Herd Health",
+      "question": "Do I have robust protocols for euthanasia and humane decision-making for unproductive or suffering animals?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Herd Health",
+      "question": "How do I monitor and improve overall animal welfare, not just treat obvious disease?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Milking and Shed",
+      "question": "Is the milking routine efficient and consistent, or does it change with staff and season?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Milking and Shed",
+      "question": "Are cups-on times, plant settings, and milking speed matched to cow comfort and teat health?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Milking and Shed",
+      "question": "How often do I review milking machine performance and maintenance with a technician?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Milking and Shed",
+      "question": "Is my bulk milk SCC and bactoscan where it needs to be to meet contract and premium standards?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Milking and Shed",
+      "question": "Are there patterns in mastitis and SCC that point to specific shed practices or equipment issues?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Milking and Shed",
+      "question": "How well do I and staff follow hygiene protocols in the pit, especially under pressure or fatigue?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Milking and Shed",
+      "question": "Does the shed layout, yard size, and backing gate operation minimise cow stress and slipping?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Milking and Shed",
+      "question": "Is shed and effluent infrastructure adequate for the current herd size and any planned growth?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Milking and Shed",
+      "question": "Could automations (cup removers, drafting, activity collars) pay their way in labour savings or better decisions?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Milking and Shed",
+      "question": "How could I reduce time per milking while maintaining or improving milk quality and animal welfare?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Environment and Compliance",
+      "question": "How close am I to current and upcoming NZ environmental regulations on nitrogen loss, waterways, and wintering?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Environment and Compliance",
+      "question": "Where are the main environmental risk areas on my farm: critical source areas, waterways, steeper slopes, or heavy soils?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Environment and Compliance",
+      "question": "How do my grazing and effluent practices affect water quality risk, and what changes would give the biggest gains?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Environment and Compliance",
+      "question": "Is my nitrogen use, stocking rate, and bought-in feed level sustainable under likely future rules and costs?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Environment and Compliance",
+      "question": "Are there practical options to reduce footprint (for example, lower N use, stand-off pads, altered stocking) without killing profitability?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Environment and Compliance",
+      "question": "Do I have good nutrient and effluent management plans that I actually follow day-to-day?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Labour and Finance",
+      "question": "Is my labour setup sustainable: hours, rosters, housing, and training for me, family, and staff?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Labour and Finance",
+      "question": "Which tasks could be systematised or delegated to reduce reliance on a few key people?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Labour and Finance",
+      "question": "What financial metrics do I track regularly (for example, EBIT per hectare, cost of production per kg MS) to guide decisions?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 0,
+      "error": "fetch failed",
+      "preview": ""
+    },
+    {
+      "section": "Labour and Finance",
+      "question": "If milk price dropped sharply or a drought hit next season, what is my pre-planned response for feed, stocking rate, and debt?",
+      "success": false,
+      "responseLength": 0,
+      "toolCalls": [],
+      "duration": 1,
+      "error": "fetch failed",
+      "preview": ""
+    }
+  ]
+}
