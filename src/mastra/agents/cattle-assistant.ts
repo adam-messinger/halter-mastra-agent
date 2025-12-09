@@ -1,11 +1,7 @@
 import { Agent } from "@mastra/core/agent";
 import { anthropic } from "@ai-sdk/anthropic";
 import { getCachedTools } from "../mcp/halter";
-import {
-  answerRelevancyScorer,
-  toneScorer,
-  completenessScorer,
-} from "../scorers";
+import { answerRelevancyScorer } from "../scorers";
 
 const halterTools = await getCachedTools();
 
@@ -53,15 +49,7 @@ Always provide practical, actionable advice tailored to the farmer's specific si
   scorers: {
     answerRelevancy: {
       scorer: answerRelevancyScorer,
-      sampling: { type: "ratio", rate: 0.2 }, // Sample 20% of responses (uses LLM)
-    },
-    tone: {
-      scorer: toneScorer,
-      sampling: { type: "none" }, // Always run (cheap, code-based)
-    },
-    completeness: {
-      scorer: completenessScorer,
-      sampling: { type: "none" }, // Always run (cheap, code-based)
+      sampling: { type: "ratio", rate: 0.2 }, // Sample 20% of responses
     },
   },
 });
