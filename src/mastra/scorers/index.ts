@@ -7,7 +7,7 @@ import {
 
 // LLM-based scorer: evaluates if responses address the farmer's question
 export const answerRelevancyScorer = createAnswerRelevancyScorer({
-  model: anthropic("claude-haiku-3-5-20241022"),
+  model: anthropic("claude-3-5-haiku-20241022"),
 });
 
 // Code-based scorer: ensures consistent helpful/professional tone
