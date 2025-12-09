@@ -2,7 +2,7 @@ import { createUIMessageStreamResponse } from "ai";
 import { toAISdkFormat } from "@mastra/ai-sdk";
 import { RuntimeContext } from "@mastra/core/runtime-context";
 import { mastra } from "@/mastra";
-import { halterMcp } from "@/mastra/mcp/halter";
+import { getCachedFarmSummary, warmupMcp } from "@/mastra/mcp/halter";
 import {
   resetToolCallLog,
   logToolCall,
@@ -11,6 +11,9 @@ import {
 } from "@/lib/context-logger";
 
 export const maxDuration = 60;
+
+// Warm up MCP connection + farm summary on module load (eliminates cold start)
+warmupMcp();
 
 export async function POST(req: Request) {
   const { messages } = await req.json();
@@ -21,22 +24,11 @@ export async function POST(req: Request) {
   // Reset tool call tracking for this conversation
   resetToolCallLog();
 
-  // Fetch farm summary on first message of conversation
+  // Fetch farm summary on first message (uses cache)
   if (messages.length === 1) {
-    try {
-      const tools = await halterMcp.getTools();
-      const result = await tools.halter_get_farm_summary.execute({
-        context: { include: [] },
-      });
-
-      if (result && !result.isError) {
-        const content = result.content?.[0];
-        if (content?.type === "text" && content.text) {
-          runtimeContext.set("farmSummary", content.text);
-        }
-      }
-    } catch {
-      // Farm summary fetch failed - agent will work without pre-loaded context
+    const farmSummary = await getCachedFarmSummary();
+    if (farmSummary) {
+      runtimeContext.set("farmSummary", farmSummary);
     }
   }
 

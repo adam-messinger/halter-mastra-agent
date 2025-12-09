@@ -1,13 +1,13 @@
 import { Agent } from "@mastra/core/agent";
 import { google } from "@ai-sdk/google";
-import { halterMcp } from "../mcp/halter";
+import { getCachedTools } from "../mcp/halter";
 import {
   answerRelevancyScorer,
   toneScorer,
   completenessScorer,
 } from "../scorers";
 
-const halterTools = await halterMcp.getTools();
+const halterTools = await getCachedTools();
 
 export const cattleAssistant = new Agent({
   name: "Halter Farm Assistant",
@@ -48,7 +48,7 @@ ${farmSummary ? `## Current Farm Status (Pre-loaded)\nThe farm summary below was
 
 Always provide practical, actionable advice tailored to the farmer's specific situation. Consider seasonal factors, local conditions, and the farmer's resources when making recommendations. When you have access to real-time data from Halter collars, use it to provide personalized insights about specific animals or mobs.`;
   },
-  model: google("gemini-3-pro-preview"),
+  model: google("gemini-2.5-flash"),
   tools: halterTools,
   scorers: {
     answerRelevancy: {
