@@ -1,8 +1,8 @@
 import { createUIMessageStreamResponse } from "ai";
 import { toAISdkFormat } from "@mastra/ai-sdk";
 import { RuntimeContext } from "@mastra/core/runtime-context";
-import { mastra } from "@/mastra";
-import { halterMcp } from "@/mastra/mcp/halter";
+import { mastra } from "@/src/mastra";
+import { halterMcp } from "@/src/mastra/mcp/halter";
 import {
   resetToolCallLog,
   logToolCall,
