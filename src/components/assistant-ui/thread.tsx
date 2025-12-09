@@ -1,3 +1,5 @@
+"use client";
+
 import {
   ArrowDownIcon,
   ArrowUpIcon,
@@ -5,6 +7,7 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
   CopyIcon,
+  LoaderIcon,
   PencilIcon,
   RefreshCwIcon,
   Square,
@@ -53,6 +56,10 @@ export const Thread: FC = () => {
                 AssistantMessage,
               }}
             />
+
+            <ThreadPrimitive.If running>
+              <ThinkingIndicator />
+            </ThreadPrimitive.If>
 
             <ThreadPrimitive.If empty={false}>
               <div className="aui-thread-viewport-spacer min-h-8 grow" />
@@ -109,54 +116,71 @@ const ThreadWelcome: FC = () => {
   );
 };
 
+const ThinkingIndicator: FC = () => {
+  return (
+    <div className="aui-thinking-indicator mx-auto w-full max-w-[var(--thread-max-width)] py-4">
+      <m.div
+        initial={{ opacity: 0, y: 5 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="mx-2 flex items-center gap-2 text-sm text-muted-foreground"
+      >
+        <LoaderIcon className="size-4 animate-spin" />
+        <span>Thinking...</span>
+      </m.div>
+    </div>
+  );
+};
+
+const THREAD_SUGGESTIONS = [
+  {
+    title: "Farm overview",
+    label: "What's happening today?",
+    action: "Give me a farm overview. What's happening on the farm today?",
+  },
+  {
+    title: "Health alerts",
+    label: "Which cows need attention?",
+    action: "Are there any health alerts? Which cows need attention?",
+  },
+  {
+    title: "Mating progress",
+    label: "Submission rates and heats",
+    action: "How's mating going? What are our submission rates and who's on heat?",
+  },
+  {
+    title: "Pasture status",
+    label: "Paddock covers and rotation",
+    action: "What's our pasture status? Show me paddock covers and the grazing rotation.",
+  },
+] as const;
+
 const ThreadSuggestions: FC = () => {
   return (
     <div className="aui-thread-welcome-suggestions grid w-full gap-2 pb-4 @md:grid-cols-2">
-      {[
-        {
-          title: "Farm overview",
-          label: "What's happening today?",
-          action: "Give me a farm overview. What's happening on the farm today?",
-        },
-        {
-          title: "Health alerts",
-          label: "Which cows need attention?",
-          action: "Are there any health alerts? Which cows need attention?",
-        },
-        {
-          title: "Mating progress",
-          label: "Submission rates and heats",
-          action: "How's mating going? What are our submission rates and who's on heat?",
-        },
-        {
-          title: "Pasture status",
-          label: "Paddock covers and rotation",
-          action: "What's our pasture status? Show me paddock covers and the grazing rotation.",
-        },
-      ].map((suggestedAction, index) => (
+      {THREAD_SUGGESTIONS.map((suggestion, index) => (
         <m.div
+          key={suggestion.title}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
           transition={{ delay: 0.05 * index }}
-          key={`suggested-action-${suggestedAction.title}-${index}`}
           className="aui-thread-welcome-suggestion-display [&:nth-child(n+3)]:hidden @md:[&:nth-child(n+3)]:block"
         >
           <ThreadPrimitive.Suggestion
-            prompt={suggestedAction.action}
+            prompt={suggestion.action}
             send
             asChild
           >
             <Button
               variant="ghost"
               className="aui-thread-welcome-suggestion h-auto w-full flex-1 flex-wrap items-start justify-start gap-1 rounded-3xl border px-5 py-4 text-left text-sm @md:flex-col dark:hover:bg-accent/60"
-              aria-label={suggestedAction.action}
+              aria-label={suggestion.action}
             >
               <span className="aui-thread-welcome-suggestion-text-1 font-medium">
-                {suggestedAction.title}
+                {suggestion.title}
               </span>
               <span className="aui-thread-welcome-suggestion-text-2 text-muted-foreground">
-                {suggestedAction.label}
+                {suggestion.label}
               </span>
             </Button>
           </ThreadPrimitive.Suggestion>
@@ -333,6 +357,7 @@ const EditComposer: FC = () => {
         <ComposerPrimitive.Input
           className="aui-edit-composer-input flex min-h-[60px] w-full resize-none bg-transparent p-4 text-foreground outline-none"
           autoFocus
+          aria-label="Edit message"
         />
 
         <div className="aui-edit-composer-footer mx-3 mb-3 flex items-center justify-center gap-2 self-end">

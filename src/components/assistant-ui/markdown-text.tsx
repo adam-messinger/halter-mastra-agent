@@ -1,7 +1,5 @@
 "use client";
 
-import "@assistant-ui/react-markdown/styles/dot.css";
-
 import {
   type CodeHeaderProps,
   MarkdownTextPrimitive,
@@ -9,7 +7,7 @@ import {
   useIsMarkdownCodeBlock,
 } from "@assistant-ui/react-markdown";
 import remarkGfm from "remark-gfm";
-import { type FC, memo, useState } from "react";
+import { type FC, memo, useCallback, useEffect, useRef, useState } from "react";
 import { CheckIcon, CopyIcon } from "lucide-react";
 
 import { TooltipIconButton } from "@/components/assistant-ui/tooltip-icon-button";
@@ -52,16 +50,36 @@ const useCopyToClipboard = ({
 }: {
   copiedDuration?: number;
 } = {}) => {
-  const [isCopied, setIsCopied] = useState<boolean>(false);
+  const [isCopied, setIsCopied] = useState(false);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const copyToClipboard = (value: string) => {
-    if (!value) return;
+  // Cleanup timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
 
-    navigator.clipboard.writeText(value).then(() => {
-      setIsCopied(true);
-      setTimeout(() => setIsCopied(false), copiedDuration);
-    });
-  };
+  const copyToClipboard = useCallback(
+    (value: string) => {
+      if (!value) return;
+
+      navigator.clipboard.writeText(value).then(
+        () => {
+          setIsCopied(true);
+          if (timeoutRef.current) clearTimeout(timeoutRef.current);
+          timeoutRef.current = setTimeout(
+            () => setIsCopied(false),
+            copiedDuration,
+          );
+        },
+        (error) => {
+          console.warn("Failed to copy to clipboard:", error);
+        },
+      );
+    },
+    [copiedDuration],
+  );
 
   return { isCopied, copyToClipboard };
 };
