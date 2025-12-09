@@ -15,19 +15,12 @@ const toolDescriptions: Record<string, string> = {
   halter_get_alerts: "Fetching alerts",
   halter_get_mating_data: "Loading mating data",
   halter_get_pasture_data: "Checking pasture status",
-  halter_get_pasture_summary: "Getting pasture summary",
   halter_get_animal_details: "Getting animal details",
   halter_get_gps_data: "Loading GPS tracking",
 };
 
-const getToolDescription = (toolName: string, forComplete = false): string => {
-  const description = toolDescriptions[toolName];
-  if (description) {
-    return forComplete ? description.replace(/ing\b/, "ed") : description;
-  }
-  // Fallback for unknown tools
-  const readableName = toolName.replace(/_/g, " ");
-  return forComplete ? `Ran ${readableName}` : `Running ${readableName}`;
+const getToolDescription = (toolName: string): string => {
+  return toolDescriptions[toolName] || `Running ${toolName.replace(/_/g, " ")}`;
 };
 
 export const ToolFallback: ToolCallMessagePartComponent = ({
@@ -61,7 +54,7 @@ export const ToolFallback: ToolCallMessagePartComponent = ({
             </span>
           ) : (
             <span className="text-muted-foreground">
-              {getToolDescription(toolName, true)}
+              {getToolDescription(toolName).replace(/ing\b/, "ed")}
             </span>
           )}
         </p>
