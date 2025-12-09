@@ -1,5 +1,5 @@
 import { Agent } from "@mastra/core/agent";
-import { anthropic } from "@ai-sdk/anthropic";
+import { google } from "@ai-sdk/google";
 import { getCachedTools } from "../mcp/halter";
 import { promptAlignmentScorer } from "../scorers";
 
@@ -44,7 +44,7 @@ ${farmSummary ? `## Current Farm Status (Pre-loaded)\nThe farm summary below was
 
 Always provide practical, actionable advice tailored to the farmer's specific situation. Consider seasonal factors, local conditions, and the farmer's resources when making recommendations. When you have access to real-time data from Halter collars, use it to provide personalized insights about specific animals or mobs.`;
   },
-  model: anthropic("claude-sonnet-4-5-20250929"),
+  model: google("gemini-3-pro-preview"),
   tools: halterTools,
   scorers: {
     promptAlignment: {
