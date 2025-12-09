@@ -49,7 +49,7 @@ Always provide practical, actionable advice tailored to the farmer's specific si
   scorers: {
     answerRelevancy: {
       scorer: answerRelevancyScorer,
-      sampling: { type: "ratio", rate: 0.2 }, // Sample 20% of responses
+      sampling: { type: "none" }, // Score every response
     },
   },
 });
