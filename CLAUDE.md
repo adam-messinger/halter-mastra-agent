@@ -13,7 +13,7 @@ This is the Halter Farm Assistant - an AI-powered cattle farming assistant built
 ```bash
 # Development
 npm install           # Install dependencies
-npm run dev           # Run dev server (http://localhost:3000)
+npm run dev           # Run dev server (http://localhost:3001)
 
 # Code Quality
 npm run lint          # Run ESLint

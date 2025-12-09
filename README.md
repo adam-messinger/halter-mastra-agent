@@ -34,7 +34,7 @@ Run the development server:
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to use the assistant.
+Open [http://localhost:3001](http://localhost:3001) to use the assistant.
 
 ## Commands
 

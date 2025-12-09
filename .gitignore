@@ -33,6 +33,9 @@ yarn-error.log*
 # context overflow logs
 .context-logs/
 
+# mastra local database
+.mastra/
+
 # env files (can opt-in for committing if needed)
 .env*
 
