@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { AssistantRuntimeProvider } from "@assistant-ui/react";
 import {
   useChatRuntime,
@@ -18,7 +19,9 @@ export const Assistant = () => {
     <AssistantRuntimeProvider runtime={runtime}>
       <div className="flex h-dvh w-full flex-col">
         <header className="flex h-14 shrink-0 items-center border-b px-4">
-          <span className="font-semibold">Halter Farm Assistant</span>
+          <Link href="/" className="font-semibold hover:underline">
+            Halter Farm Assistant
+          </Link>
         </header>
         <div className="flex-1 overflow-hidden">
           <Thread />

@@ -1,5 +1,5 @@
 {
-  "name": "assistant-ui-starter",
+  "name": "halter-mastra-agent",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -21,7 +21,6 @@
   "dependencies": {
     "@ai-sdk/anthropic": "^2.0.53",
     "@ai-sdk/google": "^2.0.44",
-    "@ai-sdk/openai": "^2.0.75",
     "@assistant-ui/react": "^0.11.47",
     "@assistant-ui/react-ai-sdk": "^1.1.16",
     "@assistant-ui/react-markdown": "^0.11.6",
@@ -29,18 +28,13 @@
     "@mastra/core": "^0.24.6",
     "@mastra/evals": "^0.14.4",
     "@mastra/mcp": "^0.14.4",
-    "@mastra/memory": "^0.15.12",
-    "@mastra/pg": "^0.17.9",
-    "@radix-ui/react-avatar": "^1.1.11",
     "@radix-ui/react-collapsible": "^1.1.12",
     "@radix-ui/react-dialog": "^1.1.15",
-    "@radix-ui/react-separator": "^1.1.8",
     "@radix-ui/react-slot": "^1.2.4",
     "@radix-ui/react-tooltip": "^1.2.8",
     "ai": "^5.0.105",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "framer-motion": "^12.23.25",
     "lucide-react": "^0.555.0",
     "motion": "^12.23.25",
     "next": "^16.0.7",
