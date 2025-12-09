@@ -56,12 +56,6 @@ export async function POST(req: Request) {
           });
         }
       },
-      onFinish: (result) => {
-        // Log token usage
-        if (result.usage) {
-          console.log("[Agent] Token usage:", result.usage);
-        }
-      },
     });
 
     return createUIMessageStreamResponse({
@@ -71,18 +65,6 @@ export async function POST(req: Request) {
     // Log context overflow errors with full conversation details
     if (isContextOverflowError(error)) {
       logContextOverflow(error as Error, messages);
-      // Return a user-friendly error response
-      return new Response(
-        JSON.stringify({
-          error: "context_overflow",
-          message:
-            "This conversation has grown too long. Please start a fresh chat to continue.",
-        }),
-        {
-          status: 413,
-          headers: { "Content-Type": "application/json" },
-        },
-      );
     }
     throw error;
   }
